@@ -20,9 +20,9 @@
  * IN THE SOFTWARE. 
  */
 
-#include "qhttprequest.h"
+#include "QHttpRequest.h"
 
-#include "qhttpconnection.h"
+#include "QHttpConnection.h"
 
 QHttpRequest::QHttpRequest(QHttpConnection *connection, QObject *parent)
     : QObject(parent)

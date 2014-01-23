@@ -20,13 +20,13 @@
  * IN THE SOFTWARE. 
  */
 
-#include "qhttpresponse.h"
+#include "QHttpResponse.h"
 
 #include <QDateTime>
 #include <QLocale>
 
-#include "qhttpserver.h"
-#include "qhttpconnection.h"
+#include "QHttpServer.h"
+#include "QHttpConnection.h"
 
 QHttpResponse::QHttpResponse(QHttpConnection *connection)
     // TODO: parent child relation

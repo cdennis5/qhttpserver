@@ -23,8 +23,8 @@
 #ifndef Q_HTTP_CONNECTION
 #define Q_HTTP_CONNECTION
 
-#include "qhttpserverapi.h"
-#include "qhttpserverfwd.h"
+#include "QHttpServerApi.h"
+#include "QHttpServerFwd.h"
 
 #include <QObject>
 

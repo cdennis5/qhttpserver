@@ -1,9 +1,9 @@
-include(../qhttpserver.pri)
+#include(../qhttpserver.pri)
 
 QHTTPSERVER_BASE = ..
 TEMPLATE = lib
 
-TARGET = qhttpserver
+TARGET = QHttpServer
 
 !win32:VERSION = 0.1.0
 
@@ -20,16 +20,16 @@ DEFINES += QHTTPSERVER_EXPORT
 
 INCLUDEPATH += $$QHTTPSERVER_BASE/http-parser
 
-PRIVATE_HEADERS += $$QHTTPSERVER_BASE/http-parser/http_parser.h qhttpconnection.h
+PRIVATE_HEADERS += $$QHTTPSERVER_BASE/http-parser/http_parser.h QHttpConnection.h
 
-PUBLIC_HEADERS += qhttpserver.h qhttprequest.h qhttpresponse.h qhttpserverapi.h qhttpserverfwd.h
+PUBLIC_HEADERS += QHttpServer.h QHttpRequest.h QHttpResponse.h QHttpServerApi.h QHttpServerFwd.h
 
 HEADERS = $$PRIVATE_HEADERS $$PUBLIC_HEADERS
 SOURCES = *.cpp $$QHTTPSERVER_BASE/http-parser/http_parser.c
 
 OBJECTS_DIR = $$QHTTPSERVER_BASE/build
 MOC_DIR = $$QHTTPSERVER_BASE/build
-DESTDIR = $$QHTTPSERVER_BASE/lib
+#DESTDIR = $$QHTTPSERVER_BASE/lib
 
 target.path = $$LIBDIR
 headers.path = $$INCLUDEDIR

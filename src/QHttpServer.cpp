@@ -20,14 +20,14 @@
  * IN THE SOFTWARE. 
  */
 
-#include "qhttpserver.h"
+#include "QHttpServer.h"
 
 #include <QTcpServer>
 #include <QTcpSocket>
 #include <QVariant>
 #include <QDebug>
 
-#include "qhttpconnection.h"
+#include "QHttpConnection.h"
 
 QHash<int, QString> STATUS_CODES;
 

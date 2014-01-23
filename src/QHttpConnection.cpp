@@ -20,15 +20,15 @@
  * IN THE SOFTWARE.
  */
 
-#include "qhttpconnection.h"
+#include "QHttpConnection.h"
 
 #include <QTcpSocket>
 #include <QHostAddress>
 #include <QDebug>
 
 #include "http_parser.h"
-#include "qhttprequest.h"
-#include "qhttpresponse.h"
+#include "QHttpRequest.h"
+#include "QHttpResponse.h"
 
 /// @cond nodoc
 
