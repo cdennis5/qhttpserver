@@ -13,7 +13,7 @@ QT -= gui
 CONFIG += dll debug_and_release
 
 CONFIG(debug, debug|release) {
-    win32: TARGET = $$join(TARGET,,,d)
+   # win32: TARGET = $$join(TARGET,,,d)
 }
 
 DEFINES += QHTTPSERVER_EXPORT
@@ -27,8 +27,8 @@ PUBLIC_HEADERS += QHttpServer.h QHttpRequest.h QHttpResponse.h QHttpServerApi.h 
 HEADERS = $$PRIVATE_HEADERS $$PUBLIC_HEADERS
 SOURCES = *.cpp $$QHTTPSERVER_BASE/http-parser/http_parser.c
 
-OBJECTS_DIR = $$QHTTPSERVER_BASE/build
-MOC_DIR = $$QHTTPSERVER_BASE/build
+#OBJECTS_DIR = $$QHTTPSERVER_BASE/build
+#MOC_DIR = $$QHTTPSERVER_BASE/build
 #DESTDIR = $$QHTTPSERVER_BASE/lib
 
 target.path = $$LIBDIR
