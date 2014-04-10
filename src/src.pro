@@ -27,11 +27,8 @@ PUBLIC_HEADERS += QHttpServer.h QHttpRequest.h QHttpResponse.h QHttpServerApi.h 
 HEADERS = $$PRIVATE_HEADERS $$PUBLIC_HEADERS
 SOURCES = *.cpp $$QHTTPSERVER_BASE/http-parser/http_parser.c
 
-#OBJECTS_DIR = $$QHTTPSERVER_BASE/build
-#MOC_DIR = $$QHTTPSERVER_BASE/build
-#DESTDIR = $$QHTTPSERVER_BASE/lib
-
-target.path = $$LIBDIR
-headers.path = $$INCLUDEDIR
+target.path = $$[QT_INSTALL_PREFIX]/lib
 headers.files = $$PUBLIC_HEADERS
+headers.path = $$[QT_INSTALL_PREFIX]/include/QHttpServer
+
 INSTALLS += target headers
