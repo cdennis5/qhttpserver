@@ -11,7 +11,7 @@ QT += network
 QT -= gui
 
 CONFIG += dll debug_and_release
-#CONFIG += dll
+CONFIG += dll
 #CONFIG += staticlib
 
 CONFIG(debug, debug|release) {

@@ -32,6 +32,10 @@
 typedef QHash<QString, QString> HeaderHash;
 
 // QHttpServer
+Q_MOC_INCLUDE("QHttpServer.h")
+Q_MOC_INCLUDE("QHttpConnection.h")
+Q_MOC_INCLUDE("QHttpRequest.h")
+Q_MOC_INCLUDE("QHttpResponse.h")
 class QHttpServer;
 class QHttpConnection;
 class QHttpRequest;
